@@ -921,16 +921,21 @@
                                                 /></a>
                                                 <span style="width: 20px">&nbsp;</span>
                                                 <a href="https://www.linkedin.com/company/hillphoenix/" target="_blank">
-                                                    <img width="20" style="width: 20px" src="https://www.hillphoenix.com/wp-content/uploads/2025/06/linkedin-email-icon.png" alt="" />
+                                                    <img
+                                                        width="20"
+                                                        style="width: 20px"
+                                                        src="https://www.hillphoenix.com/wp-content/uploads/2025/06/linkedin-email-icon.png"
+                                                        alt=""
+                                                    />
                                                 </a>
                                                 <br /><br />
                                                 <span style="color: #d6d6d6">
-                                                    {{ site_settings.company_street_address_1 }}<br />
-                                                    {{ site_settings.company_city }}, {{ site_settings.company_state }}<br />
+                                                    {{Company.Address}}<br />
+                                                    {{Company.City}}, {{Company.State}}<br />
                                                 </span>
                                                 <span style="color: #d6d6d6"
                                                     ><a style="color: #d6d6d6" href="https://www.hillphoenix.com/company/contact-us-future-of-refrigeration/">Contact Us</a>•
-                                                    <a style="color: #d6d6d6" href="{{ unsubscribe_link }}">Unsubscribe</a></span
+                                                    <a style="color: #d6d6d6" href="{{system.unsubscribeLink}}">Unsubscribe</a></span
                                                 >
                                             </td>
                                         </tr>
